@@ -31,13 +31,13 @@ def callbackBackwardLongitudinal(request):
 #     rospy.sleep(10)
 #     pub_back.publish(0.10)
 
-    rospy.sleep(10)
+    rospy.sleep(6)
     driving_direction_pub2.publish(0.30)
 
-    rospy.sleep(10)
-    pub_forward.publish(0.1)
+    rospy.sleep(6)
+    pub_forward.publish(0.20)
 
-    rospy.sleep(10)
+    rospy.sleep(6)
     return ParkingManeuverResponse("FINISHED")
 
 
@@ -80,4 +80,3 @@ rospy.loginfo(rospy.get_caller_id() + ": started!")
 
 # spin() simply keeps python from exiting until this node is stopped
 rospy.spin()
-
